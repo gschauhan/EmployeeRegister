@@ -37,6 +37,6 @@ export class EmployeeService {
   }
 
   deleteEmployee(id: number) {
-    return this.http.delete('http://localhost:61543/api/Employee/' + id).map(x => x.json());
+    return this.http.delete('http://localhost:61543/api/Employee/ ' + id).map(x => x.json());
   }
 }
